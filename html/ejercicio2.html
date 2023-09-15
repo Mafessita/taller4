@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Formulario #</title>
+</head>
+
+<body>
+    
+<form action="">
+    <div style="display: flex;">
+        <img src="../recursos/empleado.png" alt="" height="50" style="margin-right: 10px; margin-left: 10px;
+         margin-top: 20px;">
+        <h1 style="text-align: center;">Employee Registration Form</h1>
+    </div>
+    <div style="text-align: center;">
+        <input type="radio" name="1">Mr.
+        <input type="radio" name="1">Mrs.
+        <input type="radio" name="1">Ms.
+    </div>
+
+    First Name <input type="text" pattern="(Mr|Ma|Mrs) [A-z]"> <br>
+    Last Name <input type="text" pattern="(Mr|Ma|Mrs)   [A-z]"> <br>
+    Mail <input type="text" pattern=""><br>
+    Address <input type="text" pattern="{0,100}"><br>
+    City <input type="text"><br>
+    <label for="">State</label>
+    <select name="" id="">
+        <option value="">Gujarat </option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+    </select><br>
+    Zip <input type="text"><br>
+    Upload Photo <input type="file" ><br>
+
+
+    <button>Enviar</button>
+</form>
+</body>
+
+</html>

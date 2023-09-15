@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Formulario #1</title>
+</head>
+<body>
+    <form action="">
+    <fieldset>
+        <legend> Your details </legend>
+        <ol>
+            <li>
+                Name <input type="text" pattern="[A-z]">
+            </li>
+            <li>
+                Email <input type="text" pattern="{1,30}">
+            </li>
+            <li>
+                Phone <input type="number" autofocus pattern="[0,9]{1,10}">
+            </li>
+        </ol>
+    </fieldset>
+
+    <fieldset>
+        <legend>
+            Delivery address
+        </legend>
+        <ol>
+            <li>
+                Address <textarea name="" id="" cols="30" rows="10"></textarea>
+            </li>
+            <li>
+                Post code <input type="text" pattern="\d[6,8]">
+            </li>
+            <li>
+                Contry <input type="text">
+            </li>
+        </ol>
+    </fieldset>
+
+    <fieldset>
+        <legend>Card details</legend>
+        <ol>
+            <li>
+                <fieldset>
+                    <legend>Card type</legend>
+                    <ol>
+                        <li> <input type="radio" name="1">VISA</li>
+                        <li> <input type="radio" name="1">AmEX</li>
+                        <li> <input type="radio" name="1">Mastercard</li>
+                    </ol>
+                </fieldset>
+            </li>
+            <li>
+                Card number <input type="number" pattern="\d[1,3]">
+            </li>
+            <li>
+                Segurity code <input type="text" pattern="">
+            </li>
+            <li>
+                Name on card <input type="text">
+            </li>
+        </ol>
+    </fieldset>
+    <fieldset>
+        <button>
+            buy it
+        </button>
+    </fieldset>
+</form>
+</body>
+</html>
